@@ -14,11 +14,11 @@ public static MyStack getPlateStack(){
     return stack;
   }
 
-public static MyHashSet<Integer> getValidPlateSizes(){
+public static MyHashSet<Integer> getValidPlateSizes(int a, int b, int c){
     MyHashSet<Integer> validSizes = new MyHashSet<>();
-    validSizes.add(1);
-    validSizes.add(3);
-    validSizes.add(5);
+    validSizes.add(a);
+    validSizes.add(b);
+    validSizes.add(c);
     return validSizes;
   }
 
@@ -26,7 +26,7 @@ public static MyHashSet<Integer> getValidPlateSizes(){
 
    public static void main(String[] args) {
    MyStack stack = new MyStack();
-   MyHashSet<Integer> validSizes = getValidPlateSizes();
+   MyHashSet<Integer> validSizes = getValidPlateSizes(2, 3, 5);
 
 
    stack = getPlateStack();
@@ -53,12 +53,18 @@ public static MyHashSet<Integer> getValidPlateSizes(){
 
 
 
+  MyStack stack2 = new MyStack();
+        stack2.push(3);
+        stack2.push(2);
+        stack2.push(1);
+        RecursiveQuickSort.sortStack(stack2);
+        System.out.println(stack2.toString());
 
-    } 
 
 
 
 
+  }
 }
 
 

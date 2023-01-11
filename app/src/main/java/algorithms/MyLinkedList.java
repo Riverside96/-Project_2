@@ -1,5 +1,6 @@
 package algorithms;
 import java.util.Iterator;
+
 import com.google.common.base.Predicate;
 
 public class MyLinkedList<T> implements Iterable<T>{
